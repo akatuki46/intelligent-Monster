@@ -1,0 +1,677 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース ファイル">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="ヘッダー ファイル">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="リソース ファイル">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="ソース ファイル\描画">
+      <UniqueIdentifier>{d3d57c2d-eeba-4cb5-90f7-ccf46cf0448e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\描画">
+      <UniqueIdentifier>{21227929-f19c-4f5c-929f-feea829e3418}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\当たり判定">
+      <UniqueIdentifier>{0743e851-687b-4664-b2c7-f98fa18b015b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\当たり判定">
+      <UniqueIdentifier>{4b6d0562-10f3-47af-9a68-2de23bfeaa23}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\AI">
+      <UniqueIdentifier>{0ee9f694-f83c-4438-b8c7-76d190d01e5e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\AI">
+      <UniqueIdentifier>{e3fc64a4-b135-4c03-804d-810d336f9ae3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Scene">
+      <UniqueIdentifier>{c5a99872-bcc0-45d3-8739-94b1da9438ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Scene">
+      <UniqueIdentifier>{5be6b90c-a634-4ff7-b291-4f7298151326}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="imgui">
+      <UniqueIdentifier>{0814897d-6f7d-4d0a-9ee6-d56a94fab242}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="imgui\backend">
+      <UniqueIdentifier>{e80c4792-2523-4283-8fec-375be3721c50}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\AI\BehaviorTree">
+      <UniqueIdentifier>{b20740fb-5dce-4347-ba0b-9d89731f8bbd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\AI\StateMachine">
+      <UniqueIdentifier>{c83caab3-bee9-4d94-ba6a-db531bbeb819}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\AI\BehaviorTree">
+      <UniqueIdentifier>{fdbff32b-fde5-44ef-a4dc-e199161fd97b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\AI\StateMachine">
+      <UniqueIdentifier>{345f37e0-a063-445d-8ef6-e84b1c09a50d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Item">
+      <UniqueIdentifier>{353dd29b-8690-4f6b-9ab3-971c10695321}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Item">
+      <UniqueIdentifier>{4e679c76-da8a-4fe5-87ce-b083778ee297}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="vertexLightingVS.hlsl">
+      <Filter>リソース ファイル</Filter>
+    </FxCompile>
+    <FxCompile Include="unlitTexturePS.hlsl">
+      <Filter>リソース ファイル</Filter>
+    </FxCompile>
+    <FxCompile Include="unlitTextureVS.hlsl">
+      <Filter>リソース ファイル</Filter>
+    </FxCompile>
+    <FxCompile Include="vertexLightingPS.hlsl">
+      <Filter>リソース ファイル</Filter>
+    </FxCompile>
+    <FxCompile Include="RimLightingPS.hlsl">
+      <Filter>リソース ファイル</Filter>
+    </FxCompile>
+    <FxCompile Include="RImLightingVS.hlsl">
+      <Filter>リソース ファイル</Filter>
+    </FxCompile>
+    <FxCompile Include="Common.hlsl">
+      <Filter>リソース ファイル</Filter>
+    </FxCompile>
+    <FxCompile Include="SuperChargePS.hlsl">
+      <Filter>リソース ファイル</Filter>
+    </FxCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="manager.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="renderer.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="camera.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="Enemy.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="Bullet.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="input.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="Sky.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="audio.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="Draw3D.cpp">
+      <Filter>ソース ファイル\描画</Filter>
+    </ClCompile>
+    <ClCompile Include="ModelContainer.cpp">
+      <Filter>ソース ファイル\描画</Filter>
+    </ClCompile>
+    <ClCompile Include="TextureContainer.cpp">
+      <Filter>ソース ファイル\描画</Filter>
+    </ClCompile>
+    <ClCompile Include="Draw2D.cpp">
+      <Filter>ソース ファイル\描画</Filter>
+    </ClCompile>
+    <ClCompile Include="AnimetionDraw2D.cpp">
+      <Filter>ソース ファイル\描画</Filter>
+    </ClCompile>
+    <ClCompile Include="SizeDraw2D.cpp">
+      <Filter>ソース ファイル\描画</Filter>
+    </ClCompile>
+    <ClCompile Include="Collision.cpp">
+      <Filter>ソース ファイル\当たり判定</Filter>
+    </ClCompile>
+    <ClCompile Include="Draw2DVer3D.cpp">
+      <Filter>ソース ファイル\描画</Filter>
+    </ClCompile>
+    <ClCompile Include="Transition.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="FadeDraw2D.cpp">
+      <Filter>ソース ファイル\描画</Filter>
+    </ClCompile>
+    <ClCompile Include="AnimetionDraw2DVer3D.cpp">
+      <Filter>ソース ファイル\描画</Filter>
+    </ClCompile>
+    <ClCompile Include="Timer.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="RayCollision.cpp">
+      <Filter>ソース ファイル\当たり判定</Filter>
+    </ClCompile>
+    <ClCompile Include="Ray.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="TestComponent.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp">
+      <Filter>ソース ファイル\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="title.cpp">
+      <Filter>ソース ファイル\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="GameClear.cpp">
+      <Filter>ソース ファイル\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui-master\backends\imgui_impl_dx11.cpp">
+      <Filter>imgui\backend</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui-master\backends\imgui_impl_win32.cpp">
+      <Filter>imgui\backend</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui-master\imgui.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui-master\imgui_demo.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui-master\imgui_draw.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui-master\imgui_tables.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui-master\imgui_widgets.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGuiManager.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="OBBCollision.cpp">
+      <Filter>ソース ファイル\当たり判定</Filter>
+    </ClCompile>
+    <ClCompile Include="Draw2DAction.cpp">
+      <Filter>ソース ファイル\描画</Filter>
+    </ClCompile>
+    <ClCompile Include="Prism.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="Wave3D.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="Particle.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="Draw2DParticle.cpp">
+      <Filter>ソース ファイル\描画</Filter>
+    </ClCompile>
+    <ClCompile Include="AnimetionModel.cpp">
+      <Filter>ソース ファイル\描画</Filter>
+    </ClCompile>
+    <ClCompile Include="model.cpp">
+      <Filter>ソース ファイル\描画</Filter>
+    </ClCompile>
+    <ClCompile Include="Draw3DAnimetion.cpp">
+      <Filter>ソース ファイル\描画</Filter>
+    </ClCompile>
+    <ClCompile Include="Motion.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="ClothDraw.cpp">
+      <Filter>ソース ファイル\描画</Filter>
+    </ClCompile>
+    <ClCompile Include="MeshFieldDraw.cpp">
+      <Filter>ソース ファイル\描画</Filter>
+    </ClCompile>
+    <ClCompile Include="TestScene.cpp">
+      <Filter>ソース ファイル\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="ApproachAction.cpp">
+      <Filter>ソース ファイル\AI\BehaviorTree</Filter>
+    </ClCompile>
+    <ClCompile Include="AttackAction.cpp">
+      <Filter>ソース ファイル\AI\BehaviorTree</Filter>
+    </ClCompile>
+    <ClCompile Include="AttackJudgment.cpp">
+      <Filter>ソース ファイル\AI\BehaviorTree</Filter>
+    </ClCompile>
+    <ClCompile Include="BehaviorData.cpp">
+      <Filter>ソース ファイル\AI\BehaviorTree</Filter>
+    </ClCompile>
+    <ClCompile Include="BehaviorTree.cpp">
+      <Filter>ソース ファイル\AI\BehaviorTree</Filter>
+    </ClCompile>
+    <ClCompile Include="ChargeJudgment.cpp">
+      <Filter>ソース ファイル\AI\BehaviorTree</Filter>
+    </ClCompile>
+    <ClCompile Include="CloseRangeAT.cpp">
+      <Filter>ソース ファイル\AI\BehaviorTree</Filter>
+    </ClCompile>
+    <ClCompile Include="CloseRangeJM.cpp">
+      <Filter>ソース ファイル\AI\BehaviorTree</Filter>
+    </ClCompile>
+    <ClCompile Include="DeffenceAction.cpp">
+      <Filter>ソース ファイル\AI\BehaviorTree</Filter>
+    </ClCompile>
+    <ClCompile Include="DeffenceJudgment.cpp">
+      <Filter>ソース ファイル\AI\BehaviorTree</Filter>
+    </ClCompile>
+    <ClCompile Include="LongRangeAT.cpp">
+      <Filter>ソース ファイル\AI\BehaviorTree</Filter>
+    </ClCompile>
+    <ClCompile Include="LongRangeJM.cpp">
+      <Filter>ソース ファイル\AI\BehaviorTree</Filter>
+    </ClCompile>
+    <ClCompile Include="NaviMeshAI.cpp">
+      <Filter>ソース ファイル\AI\BehaviorTree</Filter>
+    </ClCompile>
+    <ClCompile Include="NodeBase.cpp">
+      <Filter>ソース ファイル\AI\BehaviorTree</Filter>
+    </ClCompile>
+    <ClCompile Include="WaitAction.cpp">
+      <Filter>ソース ファイル\AI\BehaviorTree</Filter>
+    </ClCompile>
+    <ClCompile Include="WaitJudgment.cpp">
+      <Filter>ソース ファイル\AI\BehaviorTree</Filter>
+    </ClCompile>
+    <ClCompile Include="ChargeState.cpp">
+      <Filter>ソース ファイル\AI\StateMachine</Filter>
+    </ClCompile>
+    <ClCompile Include="NomalState.cpp">
+      <Filter>ソース ファイル\AI\StateMachine</Filter>
+    </ClCompile>
+    <ClCompile Include="SuperChargeState.cpp">
+      <Filter>ソース ファイル\AI\StateMachine</Filter>
+    </ClCompile>
+    <ClCompile Include="ChargeAction.cpp">
+      <Filter>ソース ファイル\AI\BehaviorTree</Filter>
+    </ClCompile>
+    <ClCompile Include="HpComponent.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="MultiComponent.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="Draw2DChangePivot.cpp">
+      <Filter>ソース ファイル\描画</Filter>
+    </ClCompile>
+    <ClCompile Include="MapComponent.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="ItemManager.cpp">
+      <Filter>ソース ファイル\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="Potion.cpp">
+      <Filter>ソース ファイル\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="MaxPotion.cpp">
+      <Filter>ソース ファイル\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="Transform.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="LodingScene.cpp">
+      <Filter>ソース ファイル\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="PotionG.cpp">
+      <Filter>ソース ファイル\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="NumberDraw2D.cpp">
+      <Filter>ソース ファイル\描画</Filter>
+    </ClCompile>
+    <ClCompile Include="AttaBoxComponent.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="Draw2DParticleVer3D.cpp">
+      <Filter>ソース ファイル\描画</Filter>
+    </ClCompile>
+    <ClCompile Include="DieJudgment.cpp">
+      <Filter>ソース ファイル\AI\BehaviorTree</Filter>
+    </ClCompile>
+    <ClCompile Include="DownJudgment.cpp">
+      <Filter>ソース ファイル\AI\BehaviorTree</Filter>
+    </ClCompile>
+    <ClCompile Include="CloseDis.cpp">
+      <Filter>ソース ファイル\AI\BehaviorTree</Filter>
+    </ClCompile>
+    <ClCompile Include="DieAction.cpp">
+      <Filter>ソース ファイル\AI\BehaviorTree</Filter>
+    </ClCompile>
+    <ClCompile Include="LoadingSceneMotionParticle.cpp">
+      <Filter>ソース ファイル\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="DownAction.cpp">
+      <Filter>ソース ファイル\AI\BehaviorTree</Filter>
+    </ClCompile>
+    <ClCompile Include="MediumRangeJM.cpp">
+      <Filter>ソース ファイル\AI\BehaviorTree</Filter>
+    </ClCompile>
+    <ClCompile Include="Padinput.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="GameOver.cpp">
+      <Filter>ソース ファイル\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="RushAction.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="TackleAction.cpp">
+      <Filter>ソース ファイル\AI\BehaviorTree</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseCamp.cpp">
+      <Filter>ソース ファイル\Scene</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="main.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="manager.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="renderer.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="camera.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Enemy.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Bullet.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="input.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Sky.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="audio.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="SingletonObject.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Component.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Draw3D.h">
+      <Filter>ヘッダー ファイル\描画</Filter>
+    </ClInclude>
+    <ClInclude Include="ModelContainer.h">
+      <Filter>ヘッダー ファイル\描画</Filter>
+    </ClInclude>
+    <ClInclude Include="TextureContainer.h">
+      <Filter>ヘッダー ファイル\描画</Filter>
+    </ClInclude>
+    <ClInclude Include="Draw2D.h">
+      <Filter>ヘッダー ファイル\描画</Filter>
+    </ClInclude>
+    <ClInclude Include="AnimetionDraw2D.h">
+      <Filter>ヘッダー ファイル\描画</Filter>
+    </ClInclude>
+    <ClInclude Include="SizeDraw2D.h">
+      <Filter>ヘッダー ファイル\描画</Filter>
+    </ClInclude>
+    <ClInclude Include="Collision.h">
+      <Filter>ヘッダー ファイル\当たり判定</Filter>
+    </ClInclude>
+    <ClInclude Include="Draw2DVer3D.h">
+      <Filter>ヘッダー ファイル\描画</Filter>
+    </ClInclude>
+    <ClInclude Include="Transition.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="FadeDraw2D.h">
+      <Filter>ヘッダー ファイル\描画</Filter>
+    </ClInclude>
+    <ClInclude Include="AnimetionDraw2DVer3D.h">
+      <Filter>ヘッダー ファイル\描画</Filter>
+    </ClInclude>
+    <ClInclude Include="Timer.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Ray.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="TestComponent.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="title.h">
+      <Filter>ヘッダー ファイル\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="GameClear.h">
+      <Filter>ヘッダー ファイル\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Game.h">
+      <Filter>ヘッダー ファイル\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui-master\backends\imgui_impl_dx11.h">
+      <Filter>imgui\backend</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui-master\backends\imgui_impl_win32.h">
+      <Filter>imgui\backend</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui-master\imconfig.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui-master\imgui.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui-master\imgui_internal.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGuiManager.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="OBBCollision.h">
+      <Filter>ヘッダー ファイル\当たり判定</Filter>
+    </ClInclude>
+    <ClInclude Include="Draw2DAction.h">
+      <Filter>ヘッダー ファイル\描画</Filter>
+    </ClInclude>
+    <ClInclude Include="Prism.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Wave3D.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Particle.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Draw2DParticle.h">
+      <Filter>ヘッダー ファイル\描画</Filter>
+    </ClInclude>
+    <ClInclude Include="AnimetionModel.h">
+      <Filter>ヘッダー ファイル\描画</Filter>
+    </ClInclude>
+    <ClInclude Include="model.h">
+      <Filter>ヘッダー ファイル\描画</Filter>
+    </ClInclude>
+    <ClInclude Include="Draw3DAnimetion.h">
+      <Filter>ヘッダー ファイル\描画</Filter>
+    </ClInclude>
+    <ClInclude Include="Motion.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="ClothDraw.h">
+      <Filter>ヘッダー ファイル\描画</Filter>
+    </ClInclude>
+    <ClInclude Include="MeshFieldDraw.h">
+      <Filter>ヘッダー ファイル\描画</Filter>
+    </ClInclude>
+    <ClInclude Include="ActionBase.h">
+      <Filter>ヘッダー ファイル\AI\BehaviorTree</Filter>
+    </ClInclude>
+    <ClInclude Include="ApproachAction.h">
+      <Filter>ヘッダー ファイル\AI\BehaviorTree</Filter>
+    </ClInclude>
+    <ClInclude Include="AttackAction.h">
+      <Filter>ヘッダー ファイル\AI\BehaviorTree</Filter>
+    </ClInclude>
+    <ClInclude Include="AttackJudgment.h">
+      <Filter>ヘッダー ファイル\AI\BehaviorTree</Filter>
+    </ClInclude>
+    <ClInclude Include="BehaviorData.h">
+      <Filter>ヘッダー ファイル\AI\BehaviorTree</Filter>
+    </ClInclude>
+    <ClInclude Include="BehaviorTree.h">
+      <Filter>ヘッダー ファイル\AI\BehaviorTree</Filter>
+    </ClInclude>
+    <ClInclude Include="ChargeJudgment.h">
+      <Filter>ヘッダー ファイル\AI\BehaviorTree</Filter>
+    </ClInclude>
+    <ClInclude Include="CloseRangeJM.h">
+      <Filter>ヘッダー ファイル\AI\BehaviorTree</Filter>
+    </ClInclude>
+    <ClInclude Include="DeffenceAction.h">
+      <Filter>ヘッダー ファイル\AI\BehaviorTree</Filter>
+    </ClInclude>
+    <ClInclude Include="DeffenceJudgment.h">
+      <Filter>ヘッダー ファイル\AI\BehaviorTree</Filter>
+    </ClInclude>
+    <ClInclude Include="ExecJudgmentBase.h">
+      <Filter>ヘッダー ファイル\AI\BehaviorTree</Filter>
+    </ClInclude>
+    <ClInclude Include="LongRangeAT.h">
+      <Filter>ヘッダー ファイル\AI\BehaviorTree</Filter>
+    </ClInclude>
+    <ClInclude Include="LongRangeJM.h">
+      <Filter>ヘッダー ファイル\AI\BehaviorTree</Filter>
+    </ClInclude>
+    <ClInclude Include="NaviMeshAI.h">
+      <Filter>ヘッダー ファイル\AI\BehaviorTree</Filter>
+    </ClInclude>
+    <ClInclude Include="NodeBase.h">
+      <Filter>ヘッダー ファイル\AI\BehaviorTree</Filter>
+    </ClInclude>
+    <ClInclude Include="WaitAction.h">
+      <Filter>ヘッダー ファイル\AI\BehaviorTree</Filter>
+    </ClInclude>
+    <ClInclude Include="WaitJudgment.h">
+      <Filter>ヘッダー ファイル\AI\BehaviorTree</Filter>
+    </ClInclude>
+    <ClInclude Include="CloseRangeAT.h">
+      <Filter>ヘッダー ファイル\AI\BehaviorTree</Filter>
+    </ClInclude>
+    <ClInclude Include="NomalState.h">
+      <Filter>ヘッダー ファイル\AI\StateMachine</Filter>
+    </ClInclude>
+    <ClInclude Include="ChargeState.h">
+      <Filter>ヘッダー ファイル\AI\StateMachine</Filter>
+    </ClInclude>
+    <ClInclude Include="SuperChargeState.h">
+      <Filter>ヘッダー ファイル\AI\StateMachine</Filter>
+    </ClInclude>
+    <ClInclude Include="Situation.h">
+      <Filter>ヘッダー ファイル\AI\StateMachine</Filter>
+    </ClInclude>
+    <ClInclude Include="ChargeAction.h">
+      <Filter>ヘッダー ファイル\AI\BehaviorTree</Filter>
+    </ClInclude>
+    <ClInclude Include="HpComponent.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="MultiComponent.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Draw2DChangePivot.h">
+      <Filter>ヘッダー ファイル\描画</Filter>
+    </ClInclude>
+    <ClInclude Include="MapComponent.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Item.h">
+      <Filter>ヘッダー ファイル\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="ItemManager.h">
+      <Filter>ヘッダー ファイル\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="Potion.h">
+      <Filter>ヘッダー ファイル\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="MaxPotion.h">
+      <Filter>ヘッダー ファイル\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="NumberDraw2D.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Transform.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="PotionG.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="LodingScene.h">
+      <Filter>ヘッダー ファイル\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="AttaBoxComponent.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Draw2DParticleVer3D.h">
+      <Filter>ヘッダー ファイル\描画</Filter>
+    </ClInclude>
+    <ClInclude Include="MediumRangeJM.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="DieJudgment.h">
+      <Filter>ヘッダー ファイル\AI\BehaviorTree</Filter>
+    </ClInclude>
+    <ClInclude Include="DieAction.h">
+      <Filter>ヘッダー ファイル\AI\BehaviorTree</Filter>
+    </ClInclude>
+    <ClInclude Include="CloseDis.h">
+      <Filter>ヘッダー ファイル\AI\BehaviorTree</Filter>
+    </ClInclude>
+    <ClInclude Include="DownJudgment.h">
+      <Filter>ヘッダー ファイル\AI\BehaviorTree</Filter>
+    </ClInclude>
+    <ClInclude Include="DownAction.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="LoadingSceneMotionParticle.h">
+      <Filter>ヘッダー ファイル\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Padinput.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene.h">
+      <Filter>ヘッダー ファイル\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="TestScene.h">
+      <Filter>ヘッダー ファイル\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="RayCollision.h">
+      <Filter>ヘッダー ファイル\当たり判定</Filter>
+    </ClInclude>
+    <ClInclude Include="GameOver.h">
+      <Filter>ヘッダー ファイル\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="RushAction.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="TackleAction.h">
+      <Filter>ヘッダー ファイル\AI\BehaviorTree</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseCamp.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
